@@ -18,6 +18,8 @@ export default function Home() {
           showCancelButton: true,
           confirmButtonText: "Mau Banget! ❤️",
           cancelButtonText: "Hmm... Nanti dulu 😢",
+          allowOutsideClick: false,
+          allowEscapeKey: false,
           background: "#ffe6eb",
           color: "#5c2c36",
           customClass: {
@@ -65,6 +67,9 @@ export default function Home() {
                 confirmButton: "swal-btn-cancel",
               },
             });
+          } else {
+            console.log("User keluar tanpa pilih jawaban.");
+            return;
           }
 
           window.$.ajax({
