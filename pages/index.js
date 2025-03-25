@@ -1,31 +1,32 @@
-import Head from 'next/head';
-import Script from 'next/script';
-import { useEffect } from 'react';
+import Head from "next/head";
+import Script from "next/script";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.Swal) {
-      document.getElementById('tembakButton')?.addEventListener('click', () => {
+    if (typeof window !== "undefined" && window.Swal) {
+      document.getElementById("tembakButton")?.addEventListener("click", () => {
         window.Swal.fire({
-          title: "Aku Sayang Kamu 💖",
+          title:
+            "<span style='font-size: 26px; font-weight: bold;'>Aku Sayang Kamu 💖</span>",
           html: `
             <p style="font-size:16px; color:#7c3a50;">
               Kalau aku jadi pilot, aku pasti gagal mendarat, karena udah terlanjur jatuh di hatimu.<br><br>
-              <strong style="font-size:18px;">Mau nggak kamu jadi pacarku? 💘</strong>
+              <strong style="font-size:18px; display:block;">Mau nggak kamu jadi pacarku? 💘</strong>
             </p>
           `,
           icon: "question",
           showCancelButton: true,
-          confirmButtonText: "Mau Banget! ❤️",
-          cancelButtonText: "Hmm... Nanti dulu 😢",
+          confirmButtonText: `🌸 Mau Banget! ❤️`,
+          cancelButtonText: `😳 Hmm... Nanti dulu`,
           allowOutsideClick: false,
           allowEscapeKey: false,
           background: "#ffe6eb",
           color: "#5c2c36",
           customClass: {
-            popup: "swal-popup-romantic",
-            confirmButton: "swal-btn-confirm",
-            cancelButton: "swal-btn-cancel",
+            popup: "swal-popup-romantic soft-popup",
+            confirmButton: "swal-btn-confirm soft-btn",
+            cancelButton: "swal-btn-cancel soft-btn",
           },
         }).then((result) => {
           let keterangan = "";
@@ -36,8 +37,8 @@ export default function Home() {
             jawaban = 1;
 
             window.Swal.fire({
-              title: "Yeayy! 💞",
-              text: keterangan,
+              title: "<strong style='font-size: 24px;'>Yeayy! 💞</strong>",
+              html: `<p style='font-size: 18px;'>${keterangan}</p>`,
               icon: "success",
               background: "#ffe6eb",
               color: "#5c2c36",
@@ -50,12 +51,13 @@ export default function Home() {
               },
             });
           } else if (result.dismiss === window.Swal.DismissReason.cancel) {
-            keterangan = "Yahh... Gapapa kok, aku ngerti kalau kamu butuh waktu";
+            keterangan =
+              "Yahh... Gapapa kok, aku ngerti kalau kamu butuh waktu";
             jawaban = 0;
 
             window.Swal.fire({
-              title: "Yahh... 😢",
-              text: keterangan,
+              title: "<strong style='font-size: 24px;'>Yahh... 😢</strong>",
+              html: `<p style='font-size: 18px;'>${keterangan}</p>`,
               icon: "info",
               background: "#ffe6eb",
               color: "#5c2c36",
@@ -92,33 +94,86 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Kamu & Aku</title>
+        <title>Aya & @tahirwiyann</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
           rel="stylesheet"
         />
+        <style>{`
+          .swal-popup-romantic {
+        border-radius: 35px !important;
+        box-shadow: 0 12px 30px rgba(255, 105, 180, 0.25) !important;
+        padding: 30px !important;
+        animation: fadeInSweet 0.6s ease-in-out !important;
+        backdrop-filter: blur(8px);
+        border: 2px dashed #f78ca0;
+        transition: all 0.3s ease-in-out;
+        }
+
+          .swal-btn-confirm {
+            background: linear-gradient(to right, #f78ca0, #f9748f) !important;
+            color: white !important;
+            border-radius: 999px !important;
+            font-weight: bold !important;
+            padding: 14px 32px !important;
+            font-size: 17px !important;
+            border: none !important;
+          }
+          .swal-btn-cancel {
+           background: linear-gradient(to right, #e0c3fc, #8ec5fc) !important;
+
+            color: white !important;
+            border-radius: 999px !important;
+            font-weight: bold !important;
+            padding: 14px 32px !important;
+            font-size: 17px !important;
+            border: none !important;
+          }
+          @keyframes fadeInSweet {
+            from {
+              opacity: 0;
+              transform: translateY(-10px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}</style>
       </Head>
 
-      <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" strategy="beforeInteractive" />
-      <Script src="https://code.jquery.com/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        strategy="beforeInteractive"
+      />
 
       <div className="content">
         <h1>Ada yang ingin aku katakan...</h1>
         <p>
-          Setiap detik yang kulalui bersamamu terasa begitu berarti. Senyummu bagaikan cahaya hangat
-          yang menerangi hari-hariku. Jujur, aku nggak mau lagi menyimpan rasa ini sendirian.
+          Setiap detik yang kulalui bersamamu terasa begitu berarti. Senyummu
+          bagaikan cahaya hangat yang menerangi hari-hariku. Jujur, aku nggak
+          mau lagi menyimpan rasa ini sendirian.
         </p>
         <p>
-          Boleh nggak, aku jadi bagian dari hidupmu, bukan cuma sebagai teman, tapi sebagai seseorang
-          yang selalu ada di sampingmu.
+          Boleh nggak, aku jadi bagian dari hidupmu, bukan cuma sebagai teman,
+          tapi sebagai seseorang yang selalu ada di sampingmu.
         </p>
         <button id="tembakButton">Jawab dengan hatimu ❤️</button>
       </div>
 
       <style jsx global>{`
-        html, body {
+        html,
+        body {
           margin: 0;
           padding: 0;
           font-family: "Poppins", sans-serif;
@@ -174,40 +229,6 @@ export default function Home() {
           line-height: 1.8;
           font-size: 16px;
           color: #7c3a50;
-        }
-        .swal-popup-romantic {
-          border-radius: 20px !important;
-          box-shadow: 0 0 15px rgba(255, 105, 180, 0.3) !important;
-          animation: fadeInSweet 1s ease;
-        }
-        .swal-btn-confirm {
-          background-color: #ff6fa5 !important;
-          color: white !important;
-          border-radius: 25px !important;
-          font-weight: bold !important;
-          padding: 10px 24px !important;
-          font-size: 16px !important;
-        }
-        .swal-btn-confirm:hover {
-          background-color: #ff4f8b !important;
-        }
-        .swal-btn-cancel {
-          background-color: #f3b0c3 !important;
-          color: #5c2c36 !important;
-          border-radius: 25px !important;
-          font-weight: normal !important;
-          padding: 10px 24px !important;
-          font-size: 15px !important;
-        }
-        @keyframes fadeInSweet {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
         }
       `}</style>
     </>
