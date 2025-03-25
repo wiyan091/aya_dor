@@ -12,7 +12,7 @@ export default function Home() {
           html: `
             <p style="font-size:16px; color:#7c3a50;">
               Kalau aku jadi pilot, aku pasti gagal mendarat, karena udah terlanjur jatuh di hatimu.<br><br>
-              <strong style="font-size:18px; display:block;">Mau nggak kamu jadi pacarku serta menerima semua kelebihan dan kekuranganku? 💘</strong>
+              <strong style="font-size:18px; display:block;">Mau nggak kamu jadi pacarku, serta menerima semua kelebihan dan kekuranganku? 💘</strong>
             </p>
           `,
           icon: "question",
