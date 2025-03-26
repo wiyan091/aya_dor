@@ -33,7 +33,7 @@ export default function Home() {
           let jawaban = 0;
 
           if (result.isConfirmed) {
-            keterangan = "Yeayy! Aya udah buat aku jadi orang paling bahagia!";
+            keterangan = "Aya udah buat aku jadi orang paling bahagia!";
             jawaban = 1;
 
             window.Swal.fire({
