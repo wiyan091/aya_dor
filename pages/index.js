@@ -94,7 +94,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aya & @tahirwiyann</title>
+        <title>💘 Aya & @tahirwiyann</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
