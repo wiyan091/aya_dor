@@ -8,16 +8,16 @@ export default function Home() {
       document.getElementById("tembakButton")?.addEventListener("click", () => {
         window.Swal.fire({
           title:
-            "<span style='font-size: 26px; font-weight: bold;'>Aku Sayang Kamu 💖</span>",
+            "<span style='font-size: 26px; font-weight: bold;'>Aku Sayang Aya 💖</span>",
           html: `
             <p style="font-size:16px; color:#7c3a50;">
-              Kalau aku jadi pilot, aku pasti gagal mendarat, karena udah terlanjur jatuh di hatimu.<br><br>
-              <strong style="font-size:18px; display:block;">Mau nggak kamu jadi pacarku, serta menerima semua kelebihan dan kekuranganku? 💘</strong>
+              Kalau aku jadi pilot, aku pasti gagal mendarat, karena udah terlanjur jatuh di hati Aya.<br><br>
+              <strong style="font-size:18px; display:block;">Mau nggak Aya jadi pacarku, serta menerima semua kekurangan dan kelebihanku? 💘</strong>
             </p>
           `,
           icon: "question",
           showCancelButton: true,
-          confirmButtonText: `🌸 Mau Banget! ❤️`,
+          confirmButtonText: `🌸 Aya Mau Banget! ❤️`,
           cancelButtonText: `😳 Hmm... Nanti dulu`,
           allowOutsideClick: false,
           allowEscapeKey: false,
@@ -33,11 +33,11 @@ export default function Home() {
           let jawaban = 0;
 
           if (result.isConfirmed) {
-            keterangan = "Yeayy! Kamu udah buat aku jadi orang paling bahagia!";
+            keterangan = "Yeayy! Aya udah buat aku jadi orang paling bahagia!";
             jawaban = 1;
 
             window.Swal.fire({
-              title: "<strong style='font-size: 24px;'>Yeayy! 💞</strong>",
+              title: "<strong style='font-size: 24px;'>Yeayy, Terimakasih Cantik! 💞</strong>",
               html: `<p style='font-size: 18px;'>${keterangan}</p>`,
               icon: "success",
               background: "#ffe6eb",
@@ -160,15 +160,15 @@ export default function Home() {
       <div className="content">
         <h1>Ada yang ingin aku katakan...</h1>
         <p>
-          Setiap detik yang kulalui bersamamu terasa begitu berarti. Senyummu
+          Setiap detik yang kulalui bersama Aya terasa begitu berarti. Senyummu
           bagaikan cahaya hangat yang menerangi hari-hariku. Jujur, aku nggak
           mau lagi menyimpan rasa ini sendirian.
         </p>
         <p>
-          Boleh nggak, aku jadi bagian dari hidupmu, bukan cuma sebagai teman,
+          Boleh nggak, aku jadi bagian dari hidup Aya, bukan cuma sebagai teman,
           tapi sebagai seseorang yang selalu ada di sampingmu.
         </p>
-        <button id="tembakButton">Jawab dengan hatimu ❤️</button>
+        <button id="tembakButton">Jawab dengan hatimu ya Ayaa ❤️</button>
       </div>
 
       <style jsx global>{`
