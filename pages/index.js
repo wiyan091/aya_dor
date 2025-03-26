@@ -37,7 +37,7 @@ export default function Home() {
             jawaban = 1;
 
             window.Swal.fire({
-              title: "<strong style='font-size: 24px;'>Yeayy, Terimakasih Cantik! 💞</strong>",
+              title: "<strong style='font-size: 24px;'>Yeayy, Terimakasih Cantik :) 💞</strong>",
               html: `<p style='font-size: 18px;'>${keterangan}</p>`,
               icon: "success",
               background: "#ffe6eb",
