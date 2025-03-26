@@ -158,7 +158,7 @@ export default function Home() {
       />
 
       <div className="content">
-        <h1>Ada yang ingin aku katakan...</h1>
+        <h1>Aya Sayang ada yang ingin aku katakan :)</h1>
         <p>
           Setiap detik yang kulalui bersama Aya terasa begitu berarti. Senyummu
           bagaikan cahaya hangat yang menerangi hari-hariku. Jujur, aku nggak
