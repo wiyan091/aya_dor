@@ -18,7 +18,7 @@ export default function Home() {
           icon: "question",
           showCancelButton: true,
           confirmButtonText: `🌸 Aya Mau Banget! ❤️`,
-          cancelButtonText: `😳 Hmm... Nanti dulu`,
+          cancelButtonText: `😳 Nggak Mau`,
           allowOutsideClick: false,
           allowEscapeKey: false,
           background: "#ffe6eb",
