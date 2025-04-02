@@ -12,10 +12,10 @@ export default async function handler(req, res) {
 
   try {
     const connection = await mysql.createConnection({
-      host: 'sql105.infinityfree.com',
-      user: 'if0_38586715',
-      password: 'yRtGCI0bI3eWklo',
-      database: 'if0_38586715_aya_tahir',
+      host: 'sql.freedb.tech',
+      user: 'freedb_aya_tahir',
+      password: 'yDtQ#H!wy2kjXZP',
+      database: 'freedb_aya_tahir',
     });
 
     await connection.execute(
