@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     });
 
     await connection.execute(
-      'INSERT INTO if0_38586715_aya_tahir (keterangan, jawaban, tanggal) VALUES (?, ?, ?)',
+      'INSERT INTO aya_tahir (keterangan, jawaban, tanggal) VALUES (?, ?, ?)',
       [keterangan, jawaban, tanggal]
     );
 
