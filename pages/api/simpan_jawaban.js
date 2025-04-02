@@ -12,14 +12,14 @@ export default async function handler(req, res) {
 
   try {
     const connection = await mysql.createConnection({
-      host: 'sql12.freesqldatabase.com',
-      user: 'sql12769512',
-      password: 'qRUNM6UfgY',
+      host: 'sql105.infinityfree.com',
+      user: 'if0_38586715',
+      password: 'yRtGCI0bI3eWklo',
       database: 'sql12769512',
     });
 
     await connection.execute(
-      'INSERT INTO aya_tahir (keterangan, jawaban, tanggal) VALUES (?, ?, ?)',
+      'INSERT INTO if0_38586715_aya_tahir (keterangan, jawaban, tanggal) VALUES (?, ?, ?)',
       [keterangan, jawaban, tanggal]
     );
 
