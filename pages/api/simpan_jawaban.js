@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       host: 'sql105.infinityfree.com',
       user: 'if0_38586715',
       password: 'yRtGCI0bI3eWklo',
-      database: 'sql12769512',
+      database: 'if0_38586715_aya_tahir',
     });
 
     await connection.execute(
